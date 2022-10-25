@@ -1,0 +1,86 @@
+body{
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(rgb(248, 91, 209), rgb(81, 180, 229));
+    background-size: cover;
+}
+
+.container{
+    width: 600px;
+    height: 250px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(0.5px);
+    -webkit-backdrop-filter: blur(0.5px);
+    border: 2px double black;
+    border-radius: 7px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+}
+
+.container-title{
+    text-align: center;
+    margin: 15px 0;
+    font-size: 2.5rem;
+    color: rgb(41, 3, 90);
+    text-decoration: 1px overline gray;
+    transition: 0.3s;
+}
+
+.container-title:hover{
+    font-size: 2.6rem;
+}
+
+.content{
+    margin-top: 50px;
+}
+
+input, select{
+    height: 4vh;
+    width: 35%;
+    padding-left: 10px;
+    border-radius: 5px;
+    background: none;
+    outline: none;
+    font-size: 1.1rem;
+}
+
+#input{
+    margin-left: 4rem;
+}
+
+#input:hover, #result:hover{
+    border-color: rgb(41, 3, 90);
+}
+
+span{
+    font-size: 1.5rem;
+    margin: 0.3rem;
+}
+
+select{
+    margin-top: 1rem;
+    width: 36.5%;
+}
+
+#inputType{
+    margin-left: 4rem;
+}
+/*
+#inputType,#resultType{
+    height: 4vh;
+    width: 10vw;
+    margin-left: 4rem;
+    margin-top: 1rem;
+    text-align: center;
+    color: rgb(0, 76, 255);
+    border: 3px double gray;
+    border-radius: 5px;
+    background: none;
+}
+
+#inputType{
+    margin: 10px 17%;
+}*/

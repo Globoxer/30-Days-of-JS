@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link rel="stylesheet" href="/styles/Day28.css">
+</head>
+<body>
+    <div class="start_btn"><button>Starte Quiz</button></div>
+
+    <div class="info_box">
+        <div class="info-title"><span>Spielregeln</span></div>
+        <div class="info-list">
+            <div class="info">1. Pro Frage hast Du <span>30 Sekunden</span> Zeit.</div>
+            <div class="info">2. Wird eine Antwort ausgewählt, ist sie sofort eingeloggt.</div>
+            <div class="info">3. Läuft die Zeit ab, kann keine Antwort mehr ausgewählt werden.</div>
+            <div class="info">4. Das Quiz kann während der Spielzeit nicht abgebrochen werden.</div>
+            <div class="info">5. Pro richtig beantworteter Frage gibt es einen Punkt.</div>
+        </div>
+        <div class="buttons">
+            <button class="quit">Quiz beenden</button>
+            <button class="restart">Starten</button>
+        </div>
+    </div>
+
+    <div class="quiz_box">
+        <header>
+            <div class="title">WWM - Quiz</div>
+            <div class="timer">
+                <div class="time_left_txt">Zeit läuft!</div>
+                <div class="timer_sec">29</div>
+            </div>
+            <div class="time_line"></div>
+        </header>
+        <section>
+            <div class="que_text">
+                <!-- Questions inserted from JS -->
+            </div>
+            <div class="option_list">
+                <!-- Answers inserted from JS -->
+            </div>
+        </section>
+        <footer>
+            <div class="total_que">
+                <!-- Question Count Number from JS -->
+            </div>
+            <button class="next_btn">Nächste Frage</button>
+        </footer>
+    </div>
+
+    <div class="result_box">
+        <div class="icon">
+            <i class="fas fa-crown"></i>
+        </div>
+        <div class="complete_text">Quiz beendet!</div>
+        <div class="score_text">
+            <!-- Result from JS -->
+        </div>
+        <div class="buttons">
+            <button class="restart">Nochmal Spielen</button>
+            <button class="quit">Quiz beenden</button>
+        </div>
+    </div>
+    <script src="/JS/Day28Questions.js"></script>
+    <script src="/JS/Day28Script.js"></script>
+</body>
+</html>
