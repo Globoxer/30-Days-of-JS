@@ -195,6 +195,8 @@ function tableCreation(){
     }
 }
 
+//touch Controls - WIP
+
 // $("document").ready(function(){
 //     $("body")
 //         .swipeDetector()
