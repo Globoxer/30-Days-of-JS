@@ -62,9 +62,16 @@ var blocks = setInterval(function(){
     var characterLeft = parseInt(window.getComputedStyle(character).getPropertyValue("left"));
     var drop = 0;
     if(characterTop <= 0){
-        alert("Game over. Score: "+(counter-9));
-        clearInterval(block);
-        location.reload();
+        // alert("Game over. Score: "+(counter-9));
+        // clearInterval(block);
+        // if(!alert("Game over. Score: "+(counter-9))){window.location.reload()}
+        // location.reload();
+
+        if(confirm('Game over\nPlease click "OK" and then "Abbrechen" to play again!')){
+            window.location.reload();
+            clearInterval(block)
+        }
+        //not an ideal Solution, but it works
     }
     for(var i = 0; i < currentBlocks.length; i++){
         let current = currentBlocks[i];
